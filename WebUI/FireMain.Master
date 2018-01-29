@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FireMain.Master.cs" Inherits="WebUI.FireMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title><%=webMeta.Title %></title>
+    <meta name="Keywords" content="<%=webMeta.Keyword %>" />
+    <meta name="Description" content="<%=webMeta.Description %>" /> 
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/style/main.css" type="text/css" rel="stylesheet" />
+    <script src="/Scripts/uaredirect.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            bp.src = '//push.zhanzhang.baidu.com/push.js';
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <div class="nav">
+            <div class="top_left">
+                <div class="top_home"></div>
+                <div class="top_title">
+                    您好，欢迎光临<a href="<%=ClassLibrary.Common.SysConfig.webSite %>/">重庆中国青年旅行社</a>|<a href="<%=ClassLibrary.Common.SysConfig.webSite %>/">重庆旅行社</a>享快乐旅程！
+                </div>
+            </div>
+            <div class="top_right" id="meberinfo">
+                <%=login %>
+            </div>
+        </div>
+    </div>
+    <div class="headernav">
+        <div class="logo">
+            <a class="logo_left" href="<%=ClassLibrary.Common.SysConfig.webSite %>/" title="重庆中国青年旅行社"></a>
+            <div class="logo_search">
+                <form action="/" method="post" onsubmit="return gotoDataList(this)">
+                    <div class="search_input">
+                        <input id="sous" name="sous" type="text" placeholder="请输入目的地国家、城市" value="" />
+                    </div>
+                    <input type="submit" class="search_go" value="" />
+                </form>
+                <div class="search_item">
+                    <%=dataSearchClass%>
+                </div>
+            </div>
+            <div class="logo_tel"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="mainnav">
+        <div class="nav">
+            <div class="nav_all" id="myNav">
+                <a class="navtitle"><i></i>全部出游目的地</a>
+                <div class="nav_menu" <%=displayNav %>>
+                    <div class="menu_items">
+                        <div class="menu_left">
+                            <i class="hd"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>热门海岛</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <%=hd_left %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <%=hd_right %>
+                        </div>
+                    </div>
+                    <div class="menu_items">
+                        <div class="menu_left">
+                            <i class="gn"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>国内游</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <%=gn_left %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <div class='gn_detail'>
+                                <%=gn_right %>
+                                <div class="menu_more_box">
+                                    <div class="menu_more"><a href='<%=ClassLibrary.Common.SysConfig.webSite %>/guonei/' target='_blank' title='更多国内游目的地' rel='nofollow' >查看更多目的地</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items">
+                        <div class="menu_left">
+                            <i class="cj"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>出境游</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <%=cj_left %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <div class='cj_detail'>
+                                <%=cj_right %>
+                                <div class="menu_more_box">
+                                    <div class="menu_more"><a href='<%=ClassLibrary.Common.SysConfig.webSite %>/chujing/' target='_blank' title='更多出境游目的地' rel='nofollow' >查看更多目的地</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items">
+                        <div class="menu_left">
+                            <i class="zb"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>周边游</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <%=zb_left %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <div class='zb_detail'>
+                                <div class='zbtitle'>按天数</div>
+                                <div class='zbt_days'>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/chongqing/day1/' target='_blank'>一日游</a>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/chongqing/day2/' target='_blank'>二日游</a>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/chongqing/day3/' target='_blank'>三日游</a>
+                                </div>
+                                <div class='zbtitle'>重庆周边热门目的地</div>
+                                <div class='zbt_items'>
+                                    <%=zb_right %>
+                                </div>
+                                <div class="menu_more_box">
+                                    <div class="menu_more"><a href='<%=ClassLibrary.Common.SysConfig.webSite %>/chongqing/' target='_blank' title='更多重庆游目的地' rel='nofollow' >查看更多目的地</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items">
+                        <div class="menu_left">
+                            <i class="sx"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>三峡游</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/haohuachuan/' title='' target='_blank'>豪华游船</a>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/guoneichuan/' title='' target='_blank'>国内游艇</a>
+                                    <a href='<%=ClassLibrary.Common.SysConfig.webSite %>/schedule/' title='' target='_blank'>船期表</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <div class='sx_detail'>
+                                <div class='sxtype'>三峡涉外豪华游船</div>
+                                <ul class='sxhh_items'>
+                                    <%=sx_right %>
+                                </ul>
+                                <div class="menu_more_box">
+                                    <div class="menu_more"><a href='<%=ClassLibrary.Common.SysConfig.webSite %>/sanxia/' target='_blank' title='更多三峡游线路' rel='nofollow'>更多三峡游线路</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items">
+                        <div class="menu_left lastline">
+                            <i class="zt"></i>
+                            <div class="left_item">
+                                <p class='li_title'><span class='menu_title'>主题游</span><s class='item_more'></s></p>
+                                <p class='li_items'>
+                                    <%=zj_left %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu_details" style="">
+                            <div class='zt_detail'>
+                                <ul>
+                                    <%=zj_right %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_items">
+                <%=dataMenu %>
+            </div>
+            <div class="nav_article">
+                <a href="<%=ClassLibrary.Common.SysConfig.webSite %>/news/" target="_blank">资讯</a><i></i>
+                <a href="<%=ClassLibrary.Common.SysConfig.webSite %>/article/" target="_blank">攻略</a>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="adverse" runat="server"></asp:ContentPlaceHolder>
+    <div class="outerContainer">
+        <div class="boxbody">
+        <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="boxbottom">
+        <div class="boxbottom_nav">
+            <div class="bottom_item">
+                <a href="<%=ClassLibrary.Common.SysConfig.webSite %>/aboutus/" target="_blank" rel="nofollow">关于我们</a><i></i>
+                <a href="<%=ClassLibrary.Common.SysConfig.webSite %>/contactus/" target="_blank">联系我们</a><i></i>
+                <a href="<%=ClassLibrary.Common.SysConfig.webSite %>/links/" target="_blank" rel="nofollow">友情链接</a>
+            </div>
+            <%=displayShare %>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="fnavitems">
+            <%=footerNav %>
+        </div>
+        <div class="copyright_nav">
+            <div class="copyfooter">
+                <%=footerContent %>
+            </div>
+            <div class="contact_info">
+                <div class="telfooter"></div>
+                <div class="info_detail">
+                    <div class="info_vipqq"><i></i>重庆青旅VIP特价群：<span>316466960</span></div>
+                    <div class="info_email"><i></i>邮箱地址：<span>1874472850@qq.com</span></div>
+                </div>
+            </div>
+            <div class="weixin">
+                <img src="/image/wxcode.jpg" alt="" width="120" height="120" />
+                <span><i></i>微信关注中青旅</span>
+            </div>
+        </div>
+        <div class="outerContainer">
+            <script src="/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+            <script src="/Scripts/qu17.js" type="text/javascript"></script>
+            <div class="boxfooter">
+                <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="clear"></div>
+            <div class="bottom_blank"></div>
+        </div>
+    </div>
+    <div class="outerContainer">
+        <div id="return" title="返回顶部"></div>
+        <script type="text/javascript" src="/scripts/backtop.js"></script>
+    </div>
+    <div class="contacttype">
+        <div class="contact_nav">
+            <a class="logo_follow" href="<%=ClassLibrary.Common.SysConfig.webSite %>" title=""></a>
+            <div class="QQ_items">
+                <ul>
+                    <%=qqList%>
+                </ul>
+            </div>
+            <div class="tel_follow"></div>
+        </div>
+        <div id="contact_btn" class="contact_hide">隐藏联系方式</div>
+    </div>
+    <div id="qiao-icon-wrap"></div>
+    <script type="text/javascript">
+        document.getElementById("cartCount").innerHTML = cartGetRowsCount();
+        var ieversion = getNagType();
+        if (ieversion == "IE6" || ieversion == "IE7") alert("网站暂不支持IE6/IE7，请升级浏览器！");
+        window.onload = function () {
+            newBridge();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { margin:0; padding:0; }
+.areas {font-size:12px; line-height:1.5; }
+.areas a { color:#0065bb; text-decoration:none; outline:none; }
+.areas a:hover { text-decoration:underline; }
+/*== bg spirite ==*/
+.pic{ background:url(images/map_pic_bg.png) no-repeat;}
+/*== map ==*/
+.areas,.asia,.europe,.africa,.s_america,.n_america,.oceania{ position:absolute; z-index:0}
+.areas{ background:rgb(85,85,85); background:rgba(85,85,85,0.85); padding:20px; width:410px; color:#fff; position:absolute; zoom:1; }
+.areas h4{ font:24px/30px microsoft yahei; }
+.areas h4 i{  font:18px/1.5 Tahoma; text-transform:uppercase; margin-left:15px; font-style:normal }
+.areas h4 a{ color:#fff}
+.areas .bd{ padding-top:10px; line-height:25px; position:relative; z-index:1; zoom:1; overflow:hidden}
+.areas .bd a{ float:left; min-width:72px; color:#fff; margin-left:10px; background:none; white-space: nowrap;}
+.areas .bd a:hover{ color:#fff;}
+.areas .pic{ position:absolute; right:20px; top:-60px; height:120px; width:120px; z-index:1;}
+.areas .arrow{ display:none; position:absolute; right:112px; top:-8px; height:0; font-size:0; border-style:none dashed solid dashed; border-width:0 12px 8px 12px; border-color:transparent transparent #555 transparent; opacity:0.85}
+.asia .pic{ background-position:0 0; }
+.asia .arrow{ right:150px}
+.europe .pic{ background-position:-117px -114px; }
+.europe .arrow{ right:150px}
+.africa .pic{ background-position:0 -114px; }
+.africa .arrow{ top:auto; bottom:-8px; border-style:solid dashed none dashed; border-width:8px 12px 0 12px; border-color:#555 transparent transparent transparent; }
+.s_america .pic{ background-position:-115px 0; }
+.s_america .arrow{ top:auto; bottom:-8px; right:248px; border-style:solid dashed none dashed; border-width:8px 12px 0 12px; border-color:#555 transparent transparent transparent; }
+.n_america .pic{ background-position:0 -228px; }
+.n_america .arrow{ right:326px; }
+.oceania .pic{ background-position:-120px -231px; }
+.oceania .arrow{ top:auto; bottom:-8px; border-style:solid dashed none dashed; border-width:8px 12px 0 12px; border-color:#555 transparent transparent transparent; }
+/*== css3 spirite ==*/
+.visa,.visa_lis img,.flg_lis img,.add_single h3 img,.flg_lis img{border-radius:5px}
+.areas{border-radius:10px}
+

@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/FireMain.Master" AutoEventWireup="true"
+    CodeBehind="vip.master.cs" Inherits="WebUI.vipMaster" %>
+
+<asp:Content ID="chead" ContentPlaceHolderID="head" runat="server">
+    <link href="/style/layout.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+<asp:Content ID="cbody" ContentPlaceHolderID="body" runat="server">
+    <div class="area">
+        <div class="c_t_l">
+        </div>
+        <div class="c_m">
+            <div class="memHead">
+                <img alt="" src="/image/vip.gif" /></div>
+            <div class="memNav">
+                <dl>
+                    <dt><a>会员管理中心</a></dt>
+                    <dd>
+                        <a href="/vip/orders/">订单管理</a></dd>
+                    <dd>
+                        <a href="/vip/message/">评论管理</a></dd>
+                    <dd>
+                        <a href="/vip/info/">个人资料</a></dd>
+                    <dd>
+                        <a href="/vip/changePwd/">修改密码</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/logout/">退出管理>>></a></dt>
+                </dl>
+            </div>
+            <div class="memArea">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="c_b">
+        </div>
+    </div>
+</asp:Content>

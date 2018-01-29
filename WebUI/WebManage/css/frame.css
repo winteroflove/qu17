@@ -1,0 +1,33 @@
+
+/***********************************************
+ * reset
+ ***********************************************/
+body, html, div, h1, h2, h3, h4, h5 ,h6, ul, ol, li, dl, dt, dd, p ,span , em, img{ margin:0;padding:0;font-size:12px;font-family:Arial ,Tahoma ,;overflow:auto }
+ul, li, dl, dt, dd, ol { list-style:none }
+a, img { border:none; text-decoration:none;outline:none;}
+a:hover { text-decoration:underline}
+
+.header { height:80px;background:#2eb6f0 url(images/top.jpg);}
+  .header span { position:absolute;display:block;width:312px;height:42px;right:22px;top:20px;color:#fff;line-height:42px;text-align:center;
+                 background-image:url(images/which.png)!important;background-image:url(786483643);
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/which.png');_background-image: none;}
+.banNav { height:31px;padding:1px;background:#0da7e9 url(images/banner_nav_bg.png) 0 1px;border-top:1px solid #0078dc;border-bottom:1px solid #32b4e6}
+   .banNav ul { float:right}
+   .banNav ul li { float:left;width:89px;height:31px;border-left:1px solid #0093cf}
+   .banNav ul li a { display:block;line-height:31px;color:#cbe9f5;background:url(images/banner_btn.png);border-left:1px solid #64c8f0;text-align:center}
+   .banNav p { padding-left:20px;color:#cbe9f5;line-height:31px}
+   
+.menu{ width:184px;padding:2px;height:600px;background:#dcf0fa;border:1px solid #3ca5d3;border-top:none;}
+#slide { width:182px;border:1px solid #6ec4e8;border-width:1px 1px 0;}
+#slide li.top { line-height:25px;text-align:center;border-bottom:1px solid #6ec4e8}
+#slide li span { cursor:pointer;padding:0 10px;color:#0082c8;}
+#slide a.bigMenu { display:block;padding:0 10px;width:162px;height:27px;line-height:27px;color:#0082c8;text-decoration:none;cursor:pointer;background:url(images/menu_li.png);}
+#slide a.selected { font-weight:bold;color:#0082c8;background:url(images/menu_li_hover.png);}
+#slide ul { padding:5px 0;background:#fff url(images/menu_ul.gif) no-repeat left bottom;}
+#slide ul li{ width:182px;height:25px;line-height:25px;border-bottom:1px solid #fff}
+#slide ul li a {display:block;padding-left:24px;background:url(images/menu_dd.gif) no-repeat 13px 8px;color:#64b5db;height:25px;line-height:25px}
+#slide ul li a:hover,#slide ul li a.on { color:#0082c8;background-color:#ecf7fc;text-decoration:none}
+
+#scroll { width:8px;height:1000px;border-right:1px solid #6ec4e8}
+a.hide { display:block;position:absolute;top:50%;left:0;margin-top:-25px; width:8px;height:53px;background:url(images/extend.gif)}
+a.extend { display:block;position:absolute;top:50%;left:0;margin-top:-25px; width:8px;height:53px;background:url(images/hide.gif)}

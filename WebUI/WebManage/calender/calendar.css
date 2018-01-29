@@ -1,0 +1,56 @@
+#calender{
+    width:427px;
+    font-size:12px;
+	background:#FFF;
+	margin:0 auto;
+	float:left;
+}
+#calender .arrow_over{
+	color:#FFF;
+	margin-right:5px;
+	font-weight:bold;
+	  padding:2px 20px;
+	  background-color:#5EA4D6;
+	  cursor:pointer;
+}
+#calender .arrow_out{
+	margin-right:5px;
+      color: #FFF;
+	  padding:2px 20px;
+	  background-color:#5EA4D6;
+	  cursor:pointer;
+	  /*white-space:nowrap; */
+}
+#calender td{
+	border:1px solid #d7ebf6;
+	height:40px;
+	line-height:16px;
+	color:#666;
+	text-align:center;
+	width:59px;
+}
+
+#calender tr td #cal_title{
+      background:#ceeafe; text-align:center;font-size:14px; font-weight:bold;color:#666;height:28px;
+}
+#calender #week td{
+      background: #fefecc; text-align:center;
+	  font-weight:bold;
+	  font-size:12px;
+	  height:28px;
+	  width:59px;
+	  line-height:28px;
+}
+#calender .current{
+      background: #AAE7E8;
+      display: block;
+      margin:2px;
+}
+#calender .notcurrent{
+      display: block;
+      margin:2px;
+      background:#EDEDED;
+}
+
+.calendar_number{ color:#50b6ff;}
+.calendar_price{ color:#59a60c}

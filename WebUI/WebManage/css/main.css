@@ -1,0 +1,109 @@
+body, html, div, h1, h2, h3, h4, h5 ,h6, ul, ol, li, dl, dt, dd, p ,span , em, img ,form, table ,td ,th{ margin:0;padding:0;font-size:12px;font-family:Arial ,Tahoma  }
+ul, li, dl, dt, dd, ol { list-style:none }
+table { border-collapse:collapse}
+a { color:#0292D8; }
+a, img { border:none; text-decoration:none;outline:none;cursor:pointer}
+a:hover { text-decoration:underline}
+body,html { background:#e6f7fd;overflow:auto}
+.hide { display:none; }
+.floatL { float:left}
+.floatR { float:right}
+.red { color:#f00; }
+.green{color:#0a6004;}
+.hui { color:#888; }
+.w100 { width:100px; }
+.w300 { width:300px; }
+.w500 { width:500px; }
+.red_text { color:Red;}
+
+h1 { padding-top:5px;height:28px;background:#a8e0fb url(images/titlebg.jpg) repeat-x}
+h1 span { margin:0 5px;height:28px;display:inline-block;padding-left:20px;background:url(images/title.png) no-repeat}
+h1 span b { height:28px;line-height:30px;display:inline-block;padding-right:20px;background:#a8e0fb url(images/title.png) no-repeat right top;color:#0096c8}
+h1 a { color:#1e78b4;padding:0 15px;font-weight:normal}
+h1 a:hover { font-weight:bold}
+
+.form-div { padding:10px}
+.search { padding:0 0 0 35px;height:38px;line-height:36px;background:#f6fdff url(images/find.png) no-repeat 10px center; border:1px solid #aad7eb;color:#0096c8}
+input.text { height:19px;line-height:21px; border:1px solid #96c8e6}
+input.button { width:60px;height:21px;border:none;background:url(images/btn_2.png) repeat-x;color:#0078c8; border-left:1px solid #1b8fd5;border-right:1px solid #1b8fd5;padding: 0px 2px;}
+.nav_box { padding:0 0 0 35px;height:30px;padding-top: 8px;line-height:36px;background:#f6fdff url(images/find.png) no-repeat 10px center; border:1px solid #aad7eb;color:#0096c8}
+
+.tableList { margin-top:8px;width:100%;border:1px solid #aad7eb;background:#fff url(images/ttop.gif) repeat-x;}
+.tableList th { line-height:35px;color:#1e78b4;background:url(images/th.gif) no-repeat right top; position:relative;}
+.tableList th .rorder { position:absolute; width:20px; height:24px; background:url(images/icon_updown.png) no-repeat; left:50%; top:6px;margin-left: 25px; cursor:pointer;}
+.tableList th .torder { position:absolute; width:20px; height:24px; background:url(images/icon_updown.png) no-repeat; left:50%; top:6px;margin-left: 25px; cursor:pointer;}
+.tableList th .sorder { position:absolute; width:20px; height:24px; background:url(images/icon_updown.png) no-repeat; left:50%; top:6px;margin-left: 25px; cursor:pointer;}
+.tableList tbody td { padding:8px 10px;border:1px solid #ddeff7;border-width:0 0 1px 1px;color:#666;background:none}
+.tableList tfoot td{ padding:15px 30px;}
+input.btn { width:101px;height:29px;line-height:29px;background:url(images/btn.gif) no-repeat;border:none;color:#0092c8}
+input.btn2 { width:72px;height:29px;line-height:29px;background:url(images/btn_3.gif) no-repeat;border:none;color:#0092c8}
+.page a { padding:0 10px;color:#1e78b4}
+.page span { padding:0 5px;color:#ea6d08}
+.tableList input.ipt { width:45px;}
+.tableList input.button { width:40px;}
+
+.tableAdd { width:100%;border:1px solid #c4deeb;background:#fff}
+.tableAdd td { padding:8px 15px;border-right:1px solid #c8dee9}
+.tableAdd td.nobor td { border:none;padding:0;}
+.label { background:#f1f9fb ;text-align:right;color:#0099cf}
+.tableAdd td span { color:red}
+.tableAdd td a {  color:#0654fe;text-decoration:underline}
+.tableAdd td a:hover {  font-weight: normal}
+.tableAdd tfoot td { border-top:1px solid #c4deeb;background:#fff}
+
+.tableorder{ border:1px solid #c4deeb;background:#fff}
+.tableorder td { padding:8px 15px;border:1px solid #c8dee9}
+.tableorder th { line-height:35px; background:#f1f9fb ;color:#0099cf}
+
+.tableAdd table tr,.tableAdd table tr td{padding:0;margin:0;}
+
+.pagination{ margin-right:10px;}
+.pagination span{ color:#000;margin:0 8px;font-weight:bolder; }
+.pagination a{color:#fff;text-decoration:none;display:inline-block;margin:0 5px;line-height:18px;padding:0 10px;background:#5D677C;}
+.pagination a:hover { background:#9ba5ac; }
+
+#price_layer{ display:block; position:absolute; z-index:999; background:#fefecc; width:210px; height:100px; left:0;}
+#price_layer form{ position:relative; margin-top:-2px; margin-right:3px; border:1px solid #CCC; padding:5px; background:#FFF;}
+#price_layer .baojia{ padding:3px 6px 0 6px; font-weight:bold; color:#555;}
+#price_layer .baojia a{ position:absolute; right:0; margin-top:-3px; margin-right:3px; width:14px; height:14px; overflow:hidden; background:url(./images/close.gif) no-repeat;}
+#price_layer .rq{ width:86px; margin-top:-5px; font-weight:bold; color:#555; border:none; background:none;}
+#price_layer p{ padding:2px 6px 0 6px; height:30px; color:#999;}
+#price_layer .ok{ margin-left:47px; margin-bottom:6px;}
+#price_layer .ok input.button{ padding:2px 4px;}
+
+.xingcheng-by-day {margin-top:10px;}
+.xingcheng-by-day dl {margin-top:5px;}
+.xingcheng-by-day dt {margin-bottom:5px;}
+
+.date th span a{ color:#16B;}
+
+.date td{ width:49px; font-family:Arial; vertical-align:top; border-right:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; height:34px; line-height:16px; color:#555; background:#FFF; text-indent:3px; text-align:left; overflow:hidden;}
+
+.date td.nav_on span{ color:#555;}
+.date td em{ display:block; float:left; font-family:Verdana, Geneva, sans-serif; font-size:10px;}
+.date td a{ display:block; height:40px; color:#555; text-decoration:none; cursor:pointer;}
+
+.date td.special{ background-color:#ffecb0; width:59px;}
+.date td.special em{ font-family:Verdana, Geneva, sans-serif; font-size:10px;}
+.date td.special p{ display:block; float:right; background:url(./images/x.png) no-repeat right 0;}
+
+.date td.normal{}
+.date td.normal a:hover{ background:#fef5d9;}
+
+.add_day{ width:122px; float:left; margin-left:144px; _margin-left:72px; text-align:center;}
+.add_day b{ padding:0 3px; font-size:15px; font-weight:normal;}
+.add_day a{ display:block; width:100%; height:23px; line-height:21px;}
+.add_day a:link,.add_day a:visited{ color:red; text-decoration:none; background:url(add_day.png) no-repeat 0 0;}
+.add_day a:hover{ color:blue; background:url(add_day.png) no-repeat 0 -24px;}
+
+.hotel { display:inline-block;}
+
+.setprice { float:left; padding-left:10px; display:none;}
+.setprice p { padding-bottom: 6px;}
+
+.titleByJd { width:940px; height:60px;}
+.titleByJd dd { height:30px; float:left;}
+.titleByJd a{ float:left; width:40px; height:23px; line-height:23px; cursor:pointer; text-decoration:none;color:red;}
+.titleByJd a:link,.add_day a:visited{ color:red; text-decoration:none; background:url(add_day.png) no-repeat 0 0;}
+.titleByJd a:hover{ color:blue; background:url(add_day.png) no-repeat 0 -24px;}
+#forDays { display:none;}

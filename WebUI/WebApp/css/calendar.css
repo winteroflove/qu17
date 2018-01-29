@@ -1,0 +1,115 @@
+#datePriceLayer { width:98%; padding-left:1%; padding-right:1%; background-color:#FFF; overflow:hidden; padding-top:2px;}
+#calenderdiv { width:100%;max-width:497px; margin:auto;}
+#calender{
+    width:100%;
+    font-size:12px;
+	background:none;
+}
+#calender .arrow_out_s{
+    color: #FFF;
+    padding:2px;
+    cursor:pointer;
+    font-size:12px;
+    float:left;
+    margin-left:4px;
+    position:absolute;
+    left:0;
+    top:37px;
+}
+#calender .arrow_out_s:before { content:""; padding:9px; background:url(images/bg_webapp.png) no-repeat -18px -164px;}
+#calender .arrow_out_x{
+    margin-right:4px;
+    color: #FFF;
+    padding:2px;
+    cursor:pointer;
+    float:right;
+    font-size:12px;
+    position:absolute;
+    right:0;
+    top:37px;
+}
+#calender .arrow_out_x:after { content:""; padding:9px; background:url(images/bg_webapp.png) no-repeat -58px -164px;}
+#calender td{
+	border:1px solid #e9e9e9;
+	line-height:16px;
+	width:14.3%;
+	height:auto;
+	background-color:#f9f9f9;
+}
+#calender td a { text-decoration:none;}
+#calender td em
+{
+    height:15px;
+    padding-top:10%;
+    padding-left:14%;
+	color:#b6b6b6;
+	display:block;
+	font-style:normal;
+	padding-bottom: 5%;
+}
+#calender .yearmonth 
+{
+    color:#fff;
+    font-size:12px;
+    float:left;
+    padding:2px 61px;
+    width:100%;
+    text-align:center;
+    box-sizing:border-box;
+}
+#calender tr #cal_title{
+      font-size:14px; font-weight:bold;color:#666;height:27px; border:none; position:relative;
+      background:url(images/bg_calendar.png) repeat-x; padding-top:36px; overflow:hidden;
+}
+#calender #week td{
+      background-color: #e9e9e9; text-align:center;
+	  font-size: 12px;
+	  height:48%;
+	  width:14.3%;
+	  line-height:28px;
+	  color:#333;
+}
+#calender .current{
+      background: #AAE7E8;
+      display: block;
+      margin:2px;
+}
+#calender .notcurrent{
+      display: block;
+      margin:2px;
+      background:#EDEDED;
+}
+#calender td.special{ background-color:#fff8e8; position:relative; z-index:0;background-clip:padding-box;}
+#calender td.on {background-color:#ff7800;}
+#calender td.special em{  color:#333;}
+#calender td.special a { display:block;}
+#calender td.special a em:last-child {color: #ff4400;font-size:12px; font-style:normal;}
+#calender td.on a em:last-child {color: #fff;}
+@media screen and (max-width:300px)  
+{
+#calender td.special a em:last-child {font-size:0.5rem;}
+}
+.calendar_number{ color:#50b6ff;}
+.calendar_price{ color:#59a60c}
+
+.date th span a{ color:#16B;}
+
+.date td{ width:14.3%; font-family:Arial; vertical-align:top;}
+
+.date td.nav_on span{ color:#555;}
+.date td em{ display:block; font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+.date td a { width:100%; color:#555; text-decoration:none; cursor:pointer;}
+
+.date td.normal{ width:14.3%; height:auto;}
+
+#calender td.special .price_box { position:absolute; padding:5px 20px; width:173px; height:165px; left:0px; top:58px; border:1px solid #ff4400; background-color:#FFF;}
+.price_box .price_up { position:absolute; top:-6px; left:20px; width:15px; height:10px; background:url(images/bg_ytszg.png) no-repeat -468px -600px;}
+.price_box .price_close { position:absolute; top:1px; left:201px; width:12px; height:12px; background:url(images/bg_ytszg.png) no-repeat -341px -51px; cursor:pointer;}
+.price_box dl dd { float:left; width:75px; padding-left:10px; border-right:1px solid #dfdfdf;}
+.price_box_top { color: #ff8800;width: 171px;height: 30px;line-height: 30px;font-size: 14px; border:1px solid #dfdfdf;}
+.price_box_title {width: 173px;height: 30px;line-height: 30px; background-color:#f9f9f9; font-size:14px; font-weight:bold;color: #359a07; border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; }
+.price_box_item {width: 173px;height: 30px;line-height: 30px; border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.pricenum { color:#ff4400; display:inline;}
+.pricenum span { font-size:16px; font-style:normal; }
+.box_buy { width:173px; height:30px; margin-top:8px; background-color:#359a07; color:#fff; font-size:14px; font-weight:bold; text-align:center; line-height:30px; cursor:pointer;}
+.date td .box_buy a { color:#FFF;}

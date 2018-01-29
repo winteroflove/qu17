@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MipAppMain.Master.cs" Inherits="WebUI.WebApp.Mip.MipAppMain" %>
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="applicable-device" content="mobile" />
+    <title><%=webMeta.Title%></title>
+    <meta name="Keywords" content="<%=webMeta.Keyword %>" />
+    <meta name="Description" content="<%=webMeta.Description %>" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <noscript><style>body {opacity: 1}</style></noscript>
+</head>
+<body>
+<header>
+    <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+</header>
+<article>
+    <asp:ContentPlaceHolder ID="article" runat="server"></asp:ContentPlaceHolder>
+</article>
+<footer>
+    <div class="footer_box">
+        <p>Copyright 2016 © 重庆中国青年旅行社</p>
+        <p><mip-stats-baidu token="43bfa45776e75944a93d0ee848c86ec0"></mip-stats-baidu></p>
+    </div>
+    <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+</footer>
+<div class="emptyline"></div>
+<mip-fixed type="bottom">
+    <div class="footer_button">
+        <a href="http://p.qiao.baidu.com//im/index?siteid=9133950&ucid=21054947" target="_blank"><i class="icon_qq">在线咨询</i></a>
+        <a href="tel:4000175761"><i class="icon_tel">热线电话</i></a>
+        <a href="<%=ClassLibrary.Common.SysConfig.webSiteApp %>/mip/aboutus/" target="_blank"><i class="icon_us">关于青旅</i></a>
+    </div>
+</mip-fixed>
+<mip-fixed type="gototop">
+    <mip-gototop></mip-gototop>
+</mip-fixed>
+<!--mip 运行环境-->
+<script src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-accordion/mip-accordion.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-form/mip-form.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-fixed/mip-fixed.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-gototop/mip-gototop.js"></script>
+<!--百度统计组件 代码-->
+<script src="https://mipcache.bdstatic.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+</body>
+</html>

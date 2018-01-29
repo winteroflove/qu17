@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Columns>
+
+	<function name="文章管理">
+		<list path="News/NewsList.aspx?cid=8">行业新闻</list>
+		<list path="News/NewsList.aspx?cid=9">旅游常识</list>
+		<list path="News/NewsList.aspx?cid=10">帮助中心</list>
+		<list path="News/NewsList.aspx?cid=7">地区概述</list>
+		<list path="News/NewsList.aspx?cid=1,2,3,4">游、食、娱、购</list>
+		<list path="News/NewsList.aspx?cid=6">景点介绍</list>
+		<list path="News/NewsList.aspx?cid=5">旅游攻略</list>
+	</function>
+
+	<function name="旅行社导航">
+		<list path="Company/CompanyList.aspx">旅游社管理</list>
+		<list path="Company/CompanyAdd.aspx">添加旅行社</list>
+	</function>
+  
+  <function name="路线管理">
+    <list path="Routes/RouteList.aspx">路线管理</list>
+    <list path="Routes/RouteAdd.aspx">添加路线</list>
+	<list path="RouteComment/RouteCommentList.aspx">路线评论管理</list>
+  </function>
+
+  <function name="路线类型管理">
+    <list path="RouteClass/RouteClassList.aspx?cid=1">国内旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=2">出境旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=3">周边旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=4">主题旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=5">三峡旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=6">港澳旅游</list>
+	<list path="RouteClass/RouteClassList.aspx?cid=7">自驾游</list>
+  </function>
+    
+  <function name="订单管理">
+    <list path="Orders/OrdersList.aspx">订单管理</list>
+  </function>
+
+  <function name="广告管理">
+    <list path="Advertise/AdvertiseList.aspx">广告管理</list>
+	  <list path="Advertise/AdvertiseAdd.aspx">添加广告</list>  
+    <list path="Advertise/ScrollImageList.aspx">首页滚动图片管理</list>
+	  <list path="Advertise/ScrollImageAdd.aspx">添加首页滚动图片</list>
+	<list path="Certificate/CertifyImageList.aspx">资质图片管理</list>
+	  <list path="Certificate/CertifyImageAdd.aspx">添加资质图片</list>
+  </function>
+
+  <function name="公告管理">
+    <list path="SystemArticle/ArticleEdit.aspx?id=5">网站公告</list>
+  </function>
+
+  <function name="留言管理">
+    <list path="Message/MessageList.aspx?id=5">留言列表</list>
+  </function>
+
+  <function name="友情链接">
+    <list path="Links/LinksList.aspx">友情链接管理</list>
+    <list path="Links/LinksAdd.aspx">添加友情链接</list>
+  </function>
+
+  <function name="系统文章">
+    <list path="SystemArticle/ArticleEdit.aspx?id=1">关于我们</list>
+    <list path="SystemArticle/ArticleEdit.aspx?id=2">联系我们</list>
+	<list path="SystemArticle/ArticleEdit.aspx?id=3">服务条款</list>
+    <list path="SystemArticle/ArticleEdit.aspx?id=4">网站页脚</list>
+	<list path="SystemArticle/ArticleEdit.aspx?id=6">隐私协议</list>
+  </function>
+
+  <function name="系统管理">
+    <list path="SystemSet/WebMeta.aspx?id=1">网站设置</list>
+    <list path="SystemSet/AccountList.aspx">支付宝账号管理</list>
+    <list path="SystemSet/MemberList.aspx">会员管理</list>
+	<list path="Admin/AdminList.aspx">管理员管理</list>
+  </function>
+
+</Columns>

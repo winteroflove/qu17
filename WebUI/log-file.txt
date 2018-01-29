@@ -1,0 +1,4 @@
+[Header]\r\n2013-12-04 16:17:06,140 [4] INFO  WebUI.Main [(null)] (null)> - sucess
+[Footer]\r\n[Header]\r\nsucess
+sucess
+[Footer]\r\nsucess
